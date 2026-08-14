@@ -1,0 +1,326 @@
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #07090d;
+            color: #f7f9fc;
+            line-height: 1.5
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            background: rgba(7, 9, 13, .9);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid #252c36
+        }
+
+        .navin {
+            max-width: 1150px;
+            margin: auto;
+            padding: 17px 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .logo {
+            font-weight: 900;
+            font-size: 20px
+        }
+
+        .logo span {
+            color: #38e77f
+        }
+
+        .navlinks a {
+            margin-left: 22px;
+            color: #c4ccd7;
+            font-size: 14px
+        }
+
+        .hero {
+            min-height: 88vh;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            padding: 75px 22px;
+            background: radial-gradient(circle at 75% 25%, rgba(56, 231, 127, .18), transparent 28%), radial-gradient(circle at 15% 75%, rgba(57, 108, 255, .13), transparent 30%)
+        }
+
+        .hero-inner {
+            max-width: 900px
+        }
+
+        .pill {
+            display: inline-block;
+            border: 1px solid #34404e;
+            border-radius: 999px;
+            padding: 8px 14px;
+            color: #b8c3d0;
+            font-size: 13px;
+            margin-bottom: 24px
+        }
+
+        h1 {
+            font-size: clamp(46px, 8vw, 84px);
+            line-height: .96;
+            letter-spacing: -3px;
+            margin-bottom: 23px
+        }
+
+        h1 span,
+        h2 span {
+            color: #38e77f
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            color: #aeb8c5;
+            font-size: 18px
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 30px
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 21px;
+            border-radius: 12px;
+            border: 1px solid #2a3441;
+            background: #151b23;
+            font-weight: 800;
+            cursor: pointer
+        }
+
+        .btn.green {
+            background: #38e77f;
+            color: #06130b;
+            border-color: #38e77f
+        }
+
+        section {
+            max-width: 1150px;
+            margin: auto;
+            padding: 85px 22px
+        }
+
+        .eyebrow {
+            color: #38e77f;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 12px;
+            font-weight: 900
+        }
+
+        h2 {
+            font-size: 42px;
+            letter-spacing: -1.5px;
+            margin: 8px 0 12px
+        }
+
+        .sub {
+            color: #aeb8c5;
+            max-width: 680px
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-top: 35px
+        }
+
+        .card {
+            background: linear-gradient(180deg, #151b24, #0e1218);
+            border: 1px solid #29333f;
+            border-radius: 20px;
+            padding: 28px;
+            position: relative
+        }
+
+        .card.pop {
+            border-color: #38e77f;
+            transform: translateY(-7px)
+        }
+
+        .badge {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            background: #38e77f;
+            color: #06130b;
+            padding: 6px 9px;
+            border-radius: 99px;
+            font-size: 10px;
+            font-weight: 900
+        }
+
+        .card h3 {
+            font-size: 22px
+        }
+
+        .price {
+            font-size: 40px;
+            font-weight: 900;
+            margin: 10px 0
+        }
+
+        .price small {
+            font-size: 14px;
+            color: #8d99a8;
+            font-weight: 500
+        }
+
+        .card ul {
+            list-style: none;
+            margin: 20px 0;
+            color: #cbd3de
+        }
+
+        .card li {
+            margin: 10px 0
+        }
+
+        .card li:before {
+            content: '✓';
+            color: #38e77f;
+            font-weight: 900;
+            margin-right: 8px
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-top: 35px
+        }
+
+        .step {
+            background: #11161e;
+            border: 1px solid #252e39;
+            border-radius: 18px;
+            padding: 25px
+        }
+
+        .num {
+            color: #38e77f;
+            font-weight: 900
+        }
+
+        .step h3 {
+            margin: 8px 0
+        }
+
+        .step p {
+            color: #9da8b6
+        }
+
+        .area {
+            background: #0c1118;
+            border-top: 1px solid #222b36;
+            border-bottom: 1px solid #222b36
+        }
+
+        .towns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 23px
+        }
+
+        .town {
+            padding: 10px 15px;
+            border: 1px solid #29333f;
+            background: #121821;
+            border-radius: 999px
+        }
+
+        .booking {
+            background: linear-gradient(135deg, #11271b, #0c1510);
+            border: 1px solid #245d3e;
+            border-radius: 24px;
+            padding: 40px
+        }
+
+        .form {
+            display: grid;
+            gap: 12px;
+            margin-top: 25px;
+            max-width: 700px
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 14px;
+            border-radius: 11px;
+            border: 1px solid #2a3441;
+            background: #080c12;
+            color: #fff;
+            font: inherit
+        }
+
+        textarea {
+            min-height: 105px;
+            resize: vertical
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 22px;
+            border-top: 1px solid #222b36;
+            color: #788493;
+            font-size: 13px
+        }
+
+        @media(max-width:800px) {
+            .navlinks {
+                display: none
+            }
+
+            .cards,
+            .steps {
+                grid-template-columns: 1fr
+            }
+
+            .card.pop {
+                transform: none
+            }
+
+            h2 {
+                font-size: 34px
+            }
+        }
+
+        .column
+        {
+            flex: 50%;
+            padding: 10px;
+        }
+        
+        .row
+        {
+            display: flex;
+        }
